@@ -122,8 +122,24 @@
 // }
 
 // Exo 5.6
-let result = 1;
-for (let i = 0; i < 8; i++) {
-  result += result * i;
+// let result = 1;
+// for (let i = 0; i < 8; i++) {
+//   result += result * i;
+// }
+// console.log(result);
+
+// Exo 5.8
+let num = prompt("écrit ton premier chiffre");
+let best = 0;
+let compteur = 0;
+while (num > 0) {
+  compteur++;
+  if (num > best) {
+    best = num;
+  }
+  num = prompt(
+    `Le meilleur chiffre actuelle est ${best}. \n Nombre de chiffre ajouter => ${compteur}`
+  );
 }
-console.log(result);
+
+alert(`Ton chiffre le plus haut est ${best} 😎`);
