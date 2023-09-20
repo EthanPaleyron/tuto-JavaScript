@@ -129,17 +129,62 @@
 // console.log(result);
 
 // Exo 5.8
-let num = prompt("écrit ton premier chiffre");
-let best = 0;
-let compteur = 0;
-while (num > 0) {
-  compteur++;
-  if (num > best) {
-    best = num;
-  }
-  num = prompt(
-    `Le meilleur chiffre actuelle est ${best}. \n Nombre de chiffre ajouter => ${compteur}`
-  );
+// let num = prompt("écrit ton premier chiffre");
+// let best = 0;
+// let compteur = 0;
+// while (num > 0) {
+//   compteur++;
+//   if (num > best) {
+//     best = num;
+//   }
+//   num = prompt(
+//     `Le meilleur chiffre actuelle est ${best}. \n Nombre de chiffre ajouter => ${compteur}`
+//   );
+// }
+
+// alert(`Ton chiffre le plus haut est ${best} 😎`);
+
+// Exo 5.9
+// let article = parseInt(prompt(`inserer votre 1er article SVP`));
+// let prix = 0;
+// while (article > 0) {
+//   prix += article;
+//   article = parseInt(prompt(`Autre chose ? \n prix actuel => ${prix}€`));
+// }
+
+// let prixPayer = 0;
+// while (prixPayer < prix) {
+//   prix -= prixPayer;
+//   prixPayer = parseInt(prompt(`Prix a payer ${prix}€`));
+// }
+
+// Exo 5.10
+// let poneyPartant = prompt("Nombre de poney en course");
+// let poneyParier = prompt("Nombre de poney parier");
+
+// function factorielle(x) {
+//   let result = 1;
+//   for (let i = 2; i <= x; i++) {
+//     result *= i;
+//   }
+//   return result;
+// }
+
+// let x = factorielle(poneyPartant) / factorielle(poneyPartant - poneyParier);
+// let y =
+//   (factorielle(poneyPartant) / factorielle(poneyParier)) *
+//   factorielle(poneyPartant - poneyParier);
+// alert(`Dans l'ordre => ${x} \n Dans le désordre => ${y}`);
+
+// Exo Fibonacci
+let num = prompt("Insert ton chiffre fibon");
+let n1 = 0;
+let n2 = 1;
+let result = 0;
+for (let i = 2; i < num; i++) {
+  n1 = n2;
+  n2 = result;
+  result = n1 + n2;
 }
 
-alert(`Ton chiffre le plus haut est ${best} 😎`);
+console.log(result);
