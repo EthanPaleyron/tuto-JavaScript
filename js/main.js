@@ -177,14 +177,112 @@
 // alert(`Dans l'ordre => ${x} \n Dans le désordre => ${y}`);
 
 // Exo Fibonacci
-let num = prompt("Insert ton chiffre fibon");
-let n1 = 0;
-let n2 = 1;
-let result = 0;
-for (let i = 2; i < num; i++) {
-  n1 = n2;
-  n2 = result;
-  result = n1 + n2;
+// let num = prompt("Insert ton chiffre fibon");
+// let n1 = 0;
+// let n2 = 1;
+// let result = 0;
+// for (let i = 2; i < num; i++) {
+//   n1 = n2;
+//   n2 = result;
+//   result = n1 + n2;
+// }
+
+// console.log(result);
+
+// Exo 6.10
+// function random(length) {
+//   const res = [];
+//   for (let i = 0; i < length; i++) {
+//     res.push(Math.floor(Math.random() * 50));
+//   }
+//   return res;
+// }
+
+// let array1 = random(10);
+// let array2 = random(10);
+// let result = [];
+
+// for (let i = 0; i < array1.length; i++) {
+//   result += array1[i] + array2[i] + " ";
+// }
+// console.log(result);
+
+// Exo 6.11
+// let array = [4, 8, 7, 12];
+// let multiple = [3, 6];
+// let result = [];
+
+// for (let i = 0; i < multiple.length; i++) {
+//   for (let y = 0; y < array.length; y++) {
+//     result += array[y] * multiple[i] + " ";
+//   }
+// }
+
+// console.log(result);
+
+// Exo OLIVIER
+// let notes = [
+//   3, 6, 4, 7, 6, 5, 3, 4, 5, 3, 6, 4, 7, 6, 5, 3, 4, 5, 3, 6, 4, 7, 6, 5, 3, 4,
+//   5,
+// ];
+// let moyen = 0;
+
+// for (let i = 0; i < notes.length; i++) {
+//   moyen += notes[i];
+// }
+// moyen = moyen / 30;
+
+// console.log(moyen);
+
+// Exo OLIVIER 2
+// let result = [];
+// for (let i = 2; i <= 20; i = i + 2) {
+//   result += i;
+// }
+// result.join("-");
+
+// console.log(result);
+
+// Exo fr
+// function pluriel(num, mot) {
+//   if (num > 1) {
+//     if (mot.substring(3) == "eau") {
+//       return mot.substring(3);
+//     }
+//   }
+//   return mot;
+// }
+
+// console.log(pluriel(2, "gateau"));
+
+// Exo cours
+let panier = [
+  {
+    name: "coca :",
+    bouteilles: 3,
+    prix: 0.9,
+  },
+  {
+    name: "bière :",
+    bouteilles: 4,
+    prix: 5,
+  },
+  {
+    name: "wisky :",
+    bouteilles: 2,
+    prix: 15,
+  },
+];
+
+let result = "";
+let prixTotal = 0;
+
+for (let i = 0; i < panier.length; i++) {
+  result += `${panier[i].name} ${panier[i].prix}*${panier[i].bouteilles}\n`;
 }
 
-console.log(result);
+// for (let i = 0; i < array.length; i++) {
+//   result +=
+// }
+
+alert(result);
