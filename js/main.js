@@ -52,18 +52,19 @@
 // } else {
 //   s++;
 // }
+
 // if (m >= 59) {
 //   h++;
 //   m = 0;
 // } else {
-//   m++;
+//   h++;
 // }
 
-// if (s >= 59) {
-
+// if (h >= 24) {
+//   h = 0;
 // }
 
-// console.log(`${h}h:${m}m:${s}s`);
+// console.log(`Dans 1s il est => ${h}h:${m}m:${s}s`);
 
 // Exo 4.3
 // let nbrPhotocopie = prompt("Nombre de photocopie");
@@ -87,11 +88,14 @@
 
 // if (Daan >= 50 || Enzo >= 50 || Ugo >= 50) {
 //   console.log("Ethan a perdu");
-// } else if (Ethan > 50) {
-//   console.log("Ethan est directement élu");
 // }
 
-// if (Ethan >= 12) {
+// if (Ethan >= 50) {
+//   console.log("Ethan est directement élu");
+// } else if (Ethan >= 12.5 && Ethan >= Daan && Ethan >= Enzo && Ethan >= Ugo) {
+//   console.log("Tu est en ballottage favorable");
+// } else {
+//   console.log("Tu est en ballottage defavorable");
 // }
 
 // Exo 4.8
@@ -174,20 +178,28 @@
 // let y =
 //   (factorielle(poneyPartant) / factorielle(poneyParier)) *
 //   factorielle(poneyPartant - poneyParier);
-// alert(`Dans l'ordre => ${x} \n Dans le désordre => ${y}`);
+// alert(
+//   `Chance de gagner dans l'ordre => ${x}% \n Chance de gagner dans le désordre => ${y}%`
+// );
 
 // Exo Fibonacci
-// let num = prompt("Insert ton chiffre fibon");
-// let n1 = 0;
-// let n2 = 1;
-// let result = 0;
-// for (let i = 2; i < num; i++) {
-//   n1 = n2;
-//   n2 = result;
-//   result = n1 + n2;
+// let n = parseInt(prompt("choisi un nombre"));
+
+// function fibonacci(nombre) {
+//   let n1 = 0;
+//   let n2 = 1;
+//   let somme = 0;
+
+//   for (let i = 2; i <= nombre; i++) {
+//     somme = n1 + n2;
+//     n1 = n2;
+//     n2 = somme;
+//   }
+
+//   return nombre ? n2 : n1;
 // }
 
-// console.log(result);
+// alert(fibonacci(n));
 
 // Exo 6.10
 // function random(length) {
@@ -237,52 +249,63 @@
 // Exo OLIVIER 2
 // let result = [];
 // for (let i = 2; i <= 20; i = i + 2) {
-//   result += i;
+//   result.push(i);
 // }
-// result.join("-");
-
-// console.log(result);
+// const jointed = result.join("-");
+// console.log(jointed);
 
 // Exo fr
 // function pluriel(num, mot) {
+//   let newString = "";
+//   let lastLetterEau = mot.length - 3;
+//   let lastLetterAl = mot.length - 2;
 //   if (num > 1) {
-//     if (mot.substring(3) == "eau") {
-//       return mot.substring(3);
+//     if (mot.substring(lastLetterEau) == "eau") {
+//       mot += "x";
+//       newString = mot;
+//     } else if (mot.substring(lastLetterAl) == "al") {
+//       newString = mot.slice(0, -1);
+//       newString += "ux";
+//     } else if (mot.substring(mot.length - 1) != "s") {
+//       mot += "s";
+//       newString = mot;
+//     } else {
+//       newString = mot;
 //     }
+//   } else {
+//     newString = mot;
 //   }
-//   return mot;
+//   return newString;
 // }
 
-// console.log(pluriel(2, "gateau"));
+// console.log(pluriel(1, "journée"));
 
 // Exo cours
-let panier = [
-  {
-    name: "coca :",
-    bouteilles: 3,
-    prix: 0.9,
-  },
-  {
-    name: "bière :",
-    bouteilles: 4,
-    prix: 5,
-  },
-  {
-    name: "wisky :",
-    bouteilles: 2,
-    prix: 15,
-  },
-];
+// let panier = [
+//   {
+//     name: "Coca :",
+//     bouteilles: 3,
+//     prix: 0.9,
+//   },
+//   {
+//     name: "Bière :",
+//     bouteilles: 4,
+//     prix: 5,
+//   },
+//   {
+//     name: "Wisky :",
+//     bouteilles: 2,
+//     prix: 15,
+//   },
+// ];
 
-let result = "";
-let prixTotal = 0;
-
-for (let i = 0; i < panier.length; i++) {
-  result += `${panier[i].name} ${panier[i].prix}*${panier[i].bouteilles}\n`;
-}
-
-// for (let i = 0; i < array.length; i++) {
-//   result +=
+// let result = "";
+// for (let i = 0; i < panier.length; i++) {
+//   result += `${panier[i].name} ${panier[i].prix}*${panier[i].bouteilles}\n`;
 // }
 
-alert(result);
+// let prixTotal = 0;
+// for (let i = 0; i < panier.length; i++) {
+//   prixTotal += panier[i].prix * panier[i].bouteilles;
+// }
+// alert(result + `Prix a payer : ${prixTotal}`);
