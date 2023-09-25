@@ -266,7 +266,7 @@
 //     } else if (mot.substring(lastLetterAl) == "al") {
 //       newString = mot.slice(0, -1);
 //       newString += "ux";
-//     } else if (mot.substring(mot.length - 1) != "s") {
+//     } else if (mot.substring(mot.length - 1) != "y") {
 //       mot += "s";
 //       newString = mot;
 //     } else {
@@ -278,7 +278,7 @@
 //   return newString;
 // }
 
-// console.log(pluriel(1, "journée"));
+// console.log(pluriel(2, "monopoly"));
 
 // Exo cours
 // let panier = [
@@ -309,3 +309,33 @@
 //   prixTotal += panier[i].prix * panier[i].bouteilles;
 // }
 // alert(result + `Prix a payer : ${prixTotal}`);
+
+// Exo calculatrice
+// function calculatrice(n1, n2, operateur) {
+//   let result = 0;
+//   result = eval(n1 + operateur + n2);
+//   return alert(`Le resulta de ${n1 + operateur + n2} est ${result}`);
+// }
+
+// calculatrice(5, 15, "+");
+
+// taux d'interet
+// function tauxDinteret(euros, ans, interetAnunel) {
+//   let pourcentage = (euros * interetAnunel) / 100;
+//   if (ans === 0) {
+//     return Math.round(euros);
+//   } else {
+//     return tauxDinteret(euros + pourcentage, ans - 1, interetAnunel);
+//   }
+// }
+
+// alert(tauxDinteret(10000, 20, 4));
+
+// Exo expression régulière
+let pseudo = prompt("Votre pseudo ?");
+
+if (pseudo.match(/^(-?(?!0)[0-9]{1,3}||0)$/)) {
+  alert("Pseudo correct !");
+} else {
+  alert("Pseudo incorrect !");
+}

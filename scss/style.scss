@@ -1,3 +1,27 @@
 span {
   color: red;
 }
+
+%case {
+  width: 12.5%;
+  height: 12.5%;
+}
+
+.echiquier {
+  margin: 1rem;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid;
+
+  .case_white {
+    @extend %case;
+    background-color: white;
+  }
+
+  .case_black {
+    @extend %case;
+    background-color: black;
+  }
+}
