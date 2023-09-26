@@ -332,10 +332,66 @@
 // alert(tauxDinteret(10000, 20, 4));
 
 // Exo expression régulière
-let pseudo = prompt("Votre pseudo ?");
+// let pseudo = prompt("Votre pseudo ?");
 
-if (pseudo.match(/^(-?(?!0)[0-9]{1,3}||0)$/)) {
-  alert("Pseudo correct !");
-} else {
-  alert("Pseudo incorrect !");
-}
+// if (pseudo.match(/^(-?(?!0)[0-9]{1,3}||0)$/)) {
+//   alert("Pseudo correct !");
+// } else {
+//   alert("Pseudo incorrect !");
+// }
+
+// Exo virgule
+// function semicolon(str) {
+//   return str.replace(".", ",");
+// }
+
+// let str = prompt("écrit un truc avec des virgule", "5.5");
+// alert(semicolon(str));
+
+// Exo .com
+// function com(link) {
+//   let newString = ".";
+//   let firstPoint = link.indexOf(".");
+//   let w = link.split(firstPoint);
+//   console.log(w);
+//   let y
+//   console.log(firstPoint);
+//   newString += link.split(".", -1).pop();
+//   return newString;
+// }
+
+// let link = prompt(
+//   "your link",
+//   "httpsdeveloper.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/split"
+// );
+// alert(com(link));
+
+// Exo date
+// function data(yourDate) {
+//   let jour = yourDate.split("/");
+//   let mois = yourDate.split("/");
+//   let annee = yourDate.split("/");
+//   return `Date = ${yourDate}\nJour = ${jour[0]}\nMois = ${mois[1]}\nAnnee = ${annee[2]}`;
+// }
+// let yourDate = prompt("ta date ?", "25/06/2010");
+// alert(data(yourDate));
+
+// Exo date dans 17 jour
+// function tomorow(daysAfter) {
+//   let today = new Date();
+//   today.setDate(today.getDate() + daysAfter);
+//   return `La date dans ${daysAfte} jours =  ${today.getDate()}/${today.getMonth()}/${today.getFullYear()}`;
+// }
+// let daysAfte = prompt("Days after", "17");
+
+// alert(tomorow(daysAfte));
+
+// Verification de la date
+// function verificationDate(d) {
+//   let Arraydate = d.split("/");
+//   let expression = Arraydate.Match("/^$/");
+//   return Arraydate;
+// }
+// let d = prompt("ta date", "23/13/2023");
+
+// alert(verificationDate(d));
