@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/scss/_link.scss">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2621df78fc.js" crossorigin="anonymous"></script>
+    <title>form</title>
+</head>
+
+<html>
+
+<body>
+
+    <form action="">
+        <label for="text">mon texts</label>
+        <input type="text" name="text" id="text" required value="Ethan">
+
+        <label for="password">mon passworld</label>
+        <input type="password" name="password" id="password" required value="Ethan.05">
+
+        <label for="checkbox">case a cochée</label>
+        <input value="c'est chequer" type="checkbox" name="checkbox" id="checkbox">
+
+        <label>choisir un bouton</label>
+        <input type="radio" name="radio" id="radio1" required value="bouton 1">
+        <label for="radio1">bouton 1</label>
+        <input type="radio" name="radio" id="radio2" required value="bouton 2">
+        <label for="radio2">bouton 2</label>
+        <input type="radio" name="radio" id="radio3" required value="bouton 3">
+        <label for="radio3">bouton 3</label>
+        <input type="radio" name="radio" id="radio4" required value="bouton 4">
+        <label for="radio4">bouton 4</label>
+        <input type="radio" name="radio" id="radio5" required value="bouton 5">
+        <label for="radio5">bouton 5</label>
+        <input type="radio" name="radio" id="radio6" required value="bouton 6">
+        <label for="radio6">bouton 6</label>
+
+        <label for="select">choisir une valeur</label>
+        <select name="select" id="select" multiple required>
+            <option value="premier">premier</option>
+            <option value="deuxième">deuxième</option>
+            <option value="troisieme">troisieme</option>
+        </select>
+
+        <label for="textarea">un commentaire</label>
+        <textarea name="textarea" id="textarea" cols="25" rows="5" required>Mon commentaire</textarea>
+
+        <input id="submit" type="submit" value="alert_formulaire_simple">
+    </form>
+
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/form.js"></script>
+</body>
+
+</html>

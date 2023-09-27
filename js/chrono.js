@@ -28,7 +28,7 @@ const stop = document.querySelector("#stop").addEventListener("click", () => {
   document.querySelector("#start").disabled = false;
   document.querySelector("#clear").disabled = false;
   document.querySelector("#memorize").disabled = false;
-  document.querySelector("#reminder").disabled = false;
+  // document.querySelector("#reminder").disabled = false;
   clearInterval(timer);
 });
 
@@ -42,6 +42,7 @@ const clear = document.querySelector("#clear").addEventListener("click", () => {
 const memorize = document
   .querySelector("#memorize")
   .addEventListener("click", () => {
+    document.querySelector("#reminder").disabled = false;
     memoS = sec;
     memoMs = msSec;
     console.log(memoS, memoMs);
@@ -52,4 +53,6 @@ const reminder = document
   .addEventListener("click", () => {
     sec = memoS;
     msSec = memoMs;
+    s.innerText = memoS;
+    ms.innerText = memoMs;
   });

@@ -420,13 +420,3 @@
 // console.log(
 //   `1er lancée ${one}\n2ème lancée ${two}\n3ème lancée ${tree}\ntes 3 lancée sont égale a = ${result}\n${verification}\nchance => ${chance}%`
 // );
-
-// Exo cookie
-// function scookie(name, value, days) {
-//   var expire = new Date();
-//   expire.setDate(expire.getDate() + days);
-//   document.cookie =
-//     name + "=" + escape(value) + ";expires=" + expire.toGMTString();
-// }
-
-// scookie("Ethan", 29, 125);
