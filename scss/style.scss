@@ -1,3 +1,7 @@
+hr {
+  margin: 1rem 0;
+}
+
 span {
   color: red;
 }
@@ -24,4 +28,22 @@ span {
     @extend %case;
     background-color: black;
   }
+}
+
+nav {
+  margin: 1rem 0;
+  ul {
+    display: flex;
+    gap: 0.5rem;
+    li {
+      cursor: pointer;
+      padding: 1rem;
+      background-color: pink;
+    }
+  }
+}
+
+.selected {
+  color: white;
+  background-color: purple;
 }

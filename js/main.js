@@ -395,3 +395,38 @@
 // let d = prompt("ta date", "23/13/2023");
 
 // alert(verificationDate(d));
+
+// Exo 441 dée
+// function getRandomInt(max, min) {
+//   return Math.floor(Math.random() * (max - min)) + min;
+// }
+// let one = getRandomInt(7, 1);
+// let two = getRandomInt(7, 1);
+// let tree = getRandomInt(7, 1);
+// let result = 0;
+// result += one + two + tree;
+// let verification = false;
+// let chance = (one * two * tree) / 6;
+// if (
+//   (one === 4 && two === 2 && tree === 1) ||
+//   (one === 4 && two === 1 && tree === 2) ||
+//   (one === 2 && two === 1 && tree === 4) ||
+//   (one === 2 && two === 4 && tree === 1) ||
+//   (one === 1 && two === 4 && tree === 2) ||
+//   (one === 1 && two === 2 && tree === 4)
+// ) {
+//   verification = true;
+// }
+// console.log(
+//   `1er lancée ${one}\n2ème lancée ${two}\n3ème lancée ${tree}\ntes 3 lancée sont égale a = ${result}\n${verification}\nchance => ${chance}%`
+// );
+
+// Exo cookie
+// function scookie(name, value, days) {
+//   var expire = new Date();
+//   expire.setDate(expire.getDate() + days);
+//   document.cookie =
+//     name + "=" + escape(value) + ";expires=" + expire.toGMTString();
+// }
+
+// scookie("Ethan", 29, 125);

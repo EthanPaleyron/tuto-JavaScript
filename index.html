@@ -13,12 +13,128 @@
 
   <h1>Vous avez vu cette page <span></span> fois.</h1>
 
+  <hr>
+
   <div class="echiquier"></div>
+
+  <hr>
+
+  <div>
+    <p><span id="s"></span>:<span id="ms"></span></p>
+  </div>
+  <button id="start">démarrer</button>
+  <button id="stop">stop</button>
+  <button id="clear">effacer</button>
+  <button id="memorize">memoriser(stop avant)</button>
+  <button id="reminder">rappel(stop avant)</button>
+
+  <hr>
+
+  <nav>
+    <ul>
+      <li value="1" class="selected">menu 1</li>
+      <li value="2">menu 2</li>
+      <li value="3">menu 3</li>
+    </ul>
+  </nav>
+  <div>contenu <span id="contenu">1</span></div>
+
+  <hr>
+
+  <!-- <form action="">
+    <label for="text">mon texts</label>
+    <input type="text" name="text" id="text" required value="Ethan">
+
+    <label for="password">mon passworld</label>
+    <input type="password" name="password" id="password" required value="Ethan.05">
+
+    <label for="checkbox">case a cochée</label>
+    <input value="c'est chequer" type="checkbox" name="checkbox" id="checkbox">
+
+    <label>choisir un bouton</label>
+    <input type="radio" name="radio" id="radio1" required value="bouton 1">
+    <label for="radio1">bouton 1</label>
+    <input type="radio" name="radio" id="radio2" required value="bouton 2">
+    <label for="radio2">bouton 2</label>
+    <input type="radio" name="radio" id="radio3" required value="bouton 3">
+    <label for="radio3">bouton 3</label>
+    <input type="radio" name="radio" id="radio4" required value="bouton 4">
+    <label for="radio4">bouton 4</label>
+    <input type="radio" name="radio" id="radio5" required value="bouton 5">
+    <label for="radio5">bouton 5</label>
+    <input type="radio" name="radio" id="radio6" required value="bouton 6">
+    <label for="radio6">bouton 6</label>
+
+    <label for="select">choisir une valeur</label>
+    <select name="select" id="select" multiple required>
+      <option value="premier">premier</option>
+      <option value="deuxième">deuxième</option>
+      <option value="troisieme">troisieme</option>
+    </select>
+
+    <label for="textarea">un commentaire</label>
+    <textarea name="textarea" id="textarea" cols="25" rows="5" required>Mon commentaire</textarea>
+
+    <input id="submit" type="submit" value="alert_formulaire_simple">
+  </form> -->
+
+  <hr>
+
+  <ul>
+    <li>A Faire:</li>
+    <li>on ne peut mettre que des chiffres</li>
+    <li>qté et prix unitaire modifiable</li>
+    <li>Calcul dès qu'on saisi un chiffre</li>
+    <li>Erreur si total commande = 0</li>
+    <li>Efface réinitialise le formulaire</li>
+  </ul>
+  <FORM NAME="form1">
+
+
+    <TABLE BORDER="1" CELLSPACING="0" BGCOLOR="#FFFFAA">
+      <TR BGCOLOR="#CCCCCC">
+        <TH WIDTH=10%>Quantité
+        <TD WIDTH=50%><B>Article</B>
+        <TH WIDTH=15%>Prix unitaire
+        <TH WIDTH=15%>Prix
+      <TR>
+        <TH><INPUT TYPE="text" NAME="q1" SIZE=3 MAXLENGTH=2 style="text-align: center; ">
+        <TD>Bureau
+        <TH><INPUT TYPE="text" NAME="pu1" VALUE="450" SIZE=5 style="text-align: right; ">
+        <TH><INPUT TYPE="text" NAME="p1" SIZE=8 style="text-align: right; ">
+      <TR>
+        <TH><INPUT TYPE="text" NAME="q2" SIZE=3 MAXLENGTH=2 style="text-align: center; ">
+        <TD>Chaises
+        <TH><INPUT TYPE="text" NAME="pu2" VALUE="80" SIZE=5 style="text-align: right; ">
+        <TH><INPUT TYPE="text" NAME="p2" SIZE=8 style="text-align: right; ">
+      <TR>
+        <TH><INPUT TYPE="text" NAME="q3" SIZE=3 MAXLENGTH=2 style="text-align: center; ">
+        <TD>Roulettes de chaises (paquet de 4)
+        <TH><INPUT TYPE="text" NAME="pu3" VALUE="16.5" SIZE=5 style="text-align: right; ">
+        <TH><INPUT TYPE="text" NAME="p3" SIZE=8 style="text-align: right; ">
+      <TR>
+        <TD COLSPAN=3 ALIGN=right BGCOLOR="#CCCCCC"><B>Total TTC</B>&nbsp;&nbsp;&nbsp;
+        <TH><INPUT TYPE="text" NAME="total" SIZE=8 style="text-align: right; ">
+    </TABLE>
+
+    <P>
+      <input type="button" value=" Soumettre la commande ">
+
+      <INPUT TYPE="RESET" VALUE="Effacer">
+
+
+  </FORM>
+
+  <hr>
 
   <script type="module" src="/js/base.js"></script>
   <script type="module" src="/js/main.js"></script>
   <script type="module" src="/js/local-storage.js"></script>
   <script type="module" src="/js/echiquier.js"></script>
+  <script type="module" src="/js/chrono.js"></script>
+  <script type="module" src="/js/contenu.js"></script>
+  <script type="module" src="/js/form.js"></script>
+  <script type="module" src="/js/table.js"></script>
 </body>
 
 </html>
