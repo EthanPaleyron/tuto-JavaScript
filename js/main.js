@@ -420,3 +420,23 @@
 // console.log(
 //   `1er lancée ${one}\n2ème lancée ${two}\n3ème lancée ${tree}\ntes 3 lancée sont égale a = ${result}\n${verification}\nchance => ${chance}%`
 // );
+
+// CO2 en France
+
+let chinois = 14000000000;
+let frensh = 48500000;
+let annee = 0;
+let pourcentage = 2;
+let co2 = 0;
+
+for (pourcentage; pourcentage >= 0; pourcentage -= 0.1) {
+  co2 = (chinois * pourcentage) / 100;
+  annee++;
+  chinois += co2;
+  if (co2 <= frensh) {
+    break;
+  }
+}
+
+console.log(annee);
+console.log(co2);
