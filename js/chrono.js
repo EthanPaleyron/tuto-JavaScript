@@ -28,7 +28,6 @@ const stop = document.querySelector("#stop").addEventListener("click", () => {
   document.querySelector("#start").disabled = false;
   document.querySelector("#clear").disabled = false;
   document.querySelector("#memorize").disabled = false;
-  // document.querySelector("#reminder").disabled = false;
   clearInterval(timer);
 });
 

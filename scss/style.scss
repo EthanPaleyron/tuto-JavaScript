@@ -47,3 +47,16 @@ nav {
   color: white;
   background-color: purple;
 }
+
+.content_green {
+  position: relative;
+  overflow: hidden;
+  border: solid green 1rem;
+  width: 50rem;
+  height: 50rem;
+
+  img {
+    position: absolute;
+    transition: 800ms ease-out;
+  }
+}

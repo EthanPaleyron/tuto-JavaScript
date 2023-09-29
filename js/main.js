@@ -423,20 +423,21 @@
 
 // CO2 en France
 
-let chinois = 14000000000;
-let frensh = 48500000;
-let annee = 0;
-let pourcentage = 2;
-let co2 = 0;
+// let chinois = 14000000000;
+// let frensh = 48500000;
+// let annee = 0;
+// let pourcentage = 2;
+// let co2 = 0;
 
-for (pourcentage; pourcentage >= 0; pourcentage -= 0.1) {
-  co2 = (chinois * pourcentage) / 100;
-  annee++;
-  chinois += co2;
-  if (co2 <= frensh) {
-    break;
-  }
-}
+// for (pourcentage; pourcentage >= 0; pourcentage -= 0.1) {
+//   co2 = (chinois * pourcentage) / 100;
+//   annee++;
+//   chinois += co2;
+//   if (co2 <= frensh) {
+//     break;
+//   }
+// }
 
-console.log(annee);
-console.log(co2);
+// console.log(
+//   `il faut ${annee} année pour qu'il y est le meme nombre de chinois et de fançais, le co2 => ${co2}`
+// );

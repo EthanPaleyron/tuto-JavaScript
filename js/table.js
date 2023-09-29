@@ -1,7 +1,12 @@
-const inputs = document.querySelectorAll("INPUT");
+const inputs = document.querySelectorAll("input");
+const inputsQ = document.querySelectorAll("input[name^='q']");
+const inputsP = document.querySelectorAll("input[name^='p']");
+const inputsPu = document.querySelectorAll("input[name^='pu']");
+const inputsT = document.querySelector("input[name='total']");
+console.log(inputsPu);
 console.log(inputs);
 
-for (let i = 0; i < inputs.length; i++) {
+for (let i = 0; i < inputsQ.length; i++) {
   inputs[i].addEventListener("input", () => {
     if (!inputs[i].value.match(/^[0-9]+$/)) {
       inputs[i].value = inputs[i].value.replace(
@@ -10,13 +15,14 @@ for (let i = 0; i < inputs.length; i++) {
       );
       return;
     }
-    inputs[2].value = inputs[0].value * inputs[1].value;
-    inputs[5].value = inputs[3].value * inputs[4].value;
-    inputs[8].value = inputs[6].value * inputs[7].value;
-    inputs[9].value =
-      parseInt(inputs[2].value) +
-      parseInt(inputs[5].value) +
-      parseInt(inputs[8].value);
+    // inputs[2].value = inputs[0].value * inputs[1].value;
+    // inputs[5].value = inputs[3].value * inputs[4].value;
+    // inputs[8].value = inputs[6].value * inputs[7].value;
+    inputsP[i].value = inputsQ[i].value * inputsPu[i].value;
+    // inputsT.value =
+    //   parseInt(inputsP[i].value) +
+    //   parseInt(inputsP[i].value) +
+    //   parseInt(inputsP[i].value);
   });
 }
 
